@@ -35,7 +35,7 @@ export function CustomerSatisfaction() {
   React.useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5200/dashboard-data");
+        const response = await fetch("https://ibots.onrender.com/dashboard-data");
 
         if (!response.ok) {
           throw new Error("Network response was not ok");
